@@ -17,3 +17,11 @@
  the original Ubuntu.
  
  
+### To run gcc , you have to install the compiler
+
+```
+- sudo apt-get update         \\Fetches the list of available updates
+- sudo apt-get upgrade        \\Strictly upgrades the current packages
+- sudo apt-get dist-upgrade   \\Installs updates (new ones)
+- sudo apt-get install gcc
+```
