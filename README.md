@@ -6,7 +6,7 @@
     - Open PowerShell as Administrator and run: ``` Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux ```
     - Restart Computer when prompted. 
  - Go to Windows Store and Download Ubuntu Application by Canonical
- - Launch the Application and follow the details.
+ - Launch the Application and follow the steps prompted.
 
  ### Want to make it look like Ubuntu Terminal?
  - Download the folder with the fonts and double click install.vbs to run the script.
