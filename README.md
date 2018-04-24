@@ -25,3 +25,30 @@
 - sudo apt-get dist-upgrade   \\Installs updates (new ones)
 - sudo apt-get install gcc
 ```
+### Mount USB Media (including FAT formated) and network shares with drvfs
+
+Mount removable media: (e.g. F:)
+
+```
+- sudo mkdir /mnt/f
+- sudo mount -t drvfs F: /mnt/f
+
+```
+To safely unmount
+
+```
+- sudo umount /mnt/f
+```
+
+You can also mount network shares without smbfs
+```
+- sudo mount -t drvfs '\\server\share' /mnt/share
+```
+
+To detach a busy device immediately (even if it is busy and cannot be unmounted forcefully).
+```
+- umount -l /PATH/OF/BUSY-DEVICE
+- umount -f /PATH/OF/BUSY-NFS(NETWORK-FILE-SYSTEM)
+```
+##### -l is for unmounting device lazily, even if it is busy
+##### -f is for unmounting device forcefully
